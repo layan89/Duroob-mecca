@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4efff;
+}
+
+/* الهيدر */
+header {
+  background: linear-gradient(135deg, #6a0dad, #9b30ff);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* الحاوية */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* الكروت */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  border: 2px solid #e6d6ff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* الصور */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* النص */
+.card h2 {
+  margin: 10px;
+  color: #6a0dad;
+}
+
+.card p {
+  margin: 10px;
+  color: #444;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #4b0082;
+  color: white;
+  margin-top: 20px;
+}
