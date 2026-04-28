@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دروب مكة</title>
     <style>
-        /* التنسيق الأساسي */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-            /* --- تعديل الخلفية --- */
-            /* أولاً: نضع تدرجاً لونياً بنفسجياً خفيفاً فوق الصورة لدمج الألوان */
-            /* ثانياً: نضع رابط صورة الكعبة وأبراج البيت بالسماء البنفسجية */
-            /* ملاحظة: يمكنك استبدال الرابط أدناه برابط صورتك الخاصة مستقبلاً */
-            background: linear-gradient(rgba(44, 0, 63, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop');
-            
+            /* هنا قمت بربط الكود بصورتك الموجودة في المجلد */
+            background: linear-gradient(rgba(44, 0, 63, 0.65), rgba(0, 0, 0, 0.7)), 
+                        url('images/kaaba.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* الخلفية ثابتة والكلام يتحرك */
+            background-attachment: fixed;
             color: #ffffff;
             display: flex;
             justify-content: center;
@@ -28,68 +22,54 @@
             min-height: 100vh;
         }
 
-        /* الحاوية الرئيسية الشفافة (تأثير الزجاج) */
         .container {
             width: 85%;
             max-width: 500px;
-            /* تم تعديل لون الخلفية الشفافة ليميل للبنفسجي الداكن */
-            background: rgba(40, 0, 60, 0.2); 
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
-            padding: 45px 25px;
-            border-radius: 25px;
-            /* حدود نحيفة جداً بلون ذهبي خافت */
-            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 40px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
             text-align: center;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
         }
 
         h1 {
-            color: #d4af37; /* لون ذهبي ملكي */
-            font-size: 2.3rem;
+            color: #d4af37;
+            font-size: 2.2rem;
             margin-bottom: 10px;
-            letter-spacing: 1px;
-            font-weight: 700;
+            font-weight: bold;
         }
 
         .description {
-            font-size: 1.05rem;
-            color: #e0e0e0;
-            margin-bottom: 40px;
-            opacity: 0.9;
+            font-size: 1.1rem;
+            color: #eeeeee;
+            margin-bottom: 30px;
         }
 
-        /* تنسيق بطاقات الأقسام */
         .card {
-            background: rgba(255, 255, 255, 0.05);
-            margin: 14px 0;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
             padding: 20px;
-            border-radius: 15px;
-            /* خط ذهبي جانبي رفيع وأنيق */
-            border-right: 3px solid #d4af37;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border-radius: 12px;
+            border-right: 4px solid #d4af37;
+            transition: 0.3s;
         }
 
         .card:hover {
-            background: rgba(212, 175, 55, 0.1); /* تأثير ذهبي خفيف عند التمرير */
-            transform: translateX(-5px) scale(1.01);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+            background: rgba(255, 255, 255, 0.15);
         }
 
         h2 {
             margin: 0;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 500;
-            color: #ffffff;
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 0.8rem;
-            color: #aaa;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            padding-top: 15px;
+            color: #cccccc;
         }
     </style>
 </head>
@@ -116,7 +96,7 @@
         </div>
 
         <footer>
-            جميع الحقوق محفوظة - دروب مكة - 2026
+            جميع الحقوق محفوظة - 2026
         </footer>
     </div>
 
