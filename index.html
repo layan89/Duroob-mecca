@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>دليل الحجاج والمعتمرين</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الحجاج والمعتمرين</title>
+    <style>
+        /* التنسيق الأساسي */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* ارفعي صورة وسميها background.jpg وضعيها بجانب ملف الـ html */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1); /* خلفية شفافة للكلام */
+            backdrop-filter: blur(10px); /* تأثير الضباب */
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 { color: #f1c40f; } /* لون ذهبي للعنوان الرئيسي */
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 1px dashed rgba(255,255,255,0.3);
+        }
+
+        .section:last-child { border-bottom: none; }
+
+        h2 { margin-bottom: 10px; }
+        p { line-height: 1.6; font-size: 1.1rem; }
+    </style>
+</head>
 <body>
 
-<header>
-  <h1>🕋 دليل الحجاج والمعتمرين</h1>
-  <p>مساعدك داخل مكة والمشاعر المقدسة</p>
-</header>
+    <div class="container">
+        <h1>🕋 دليل الحجاج والمعتمرين</h1>
+        <p>مساعدك داخل مكة والمشاعر المقدسة</p>
 
-<div class="container">
+        <div class="section">
+            <h2>🏢 مكة المكرمة</h2>
+            <p>معلومات وإرشادات داخل المدينة المقدسة.</p>
+        </div>
 
-  <div class="card">
-    <img src="images/mecca.jpg" alt="مكة">
-    <h2>🏙️ مكة المكرمة</h2>
-    <p>معلومات وإرشادات داخل المدينة المقدسة.</p>
-  </div>
+        <div class="section">
+            <h2>⛺ منى</h2>
+            <p>أماكن المخيمات ومسارات الحجاج داخل منى.</p>
+        </div>
 
-  <div class="card">
-    <img src="images/mina.jpg" alt="منى">
-    <h2>⛺ منى</h2>
-    <p>أماكن المخيمات ومسارات الحجاج داخل منى.</p>
-  </div>
+        <div class="section">
+            <h2>⛰️ عرفات</h2>
+            <p>تعليمات يوم عرفة وأماكن التواجد.</p>
+        </div>
 
-  <div class="card">
-    <img src="images/arafat.jpg" alt="عرفات">
-    <h2>🕌 عرفات</h2>
-    <p>تعليمات يوم عرفة وأماكن التواجد.</p>
-  </div>
+        <div class="section">
+            <h2>🚌 الباصات والعربات</h2>
+            <p>أماكن التنقل والمسارات الرئيسية.</p>
+        </div>
 
-  <div class="card">
-    <img src="images/transport.jpg" alt="نقل">
-    <h2>🚌 الباصات والعربات</h2>
-    <p>أماكن التنقل والمسارات الرئيسية.</p>
-  </div>
-
-</div>
-
-<footer>
-  <p>© دليل الحجاج - جميع الحقوق محفوظة</p>
-</footer>
+        <footer>
+            <p>© دليل الحجاج - جميع الحقوق محفوظة</p>
+        </footer>
+    </div>
 
 </body>
 </html>
-<style>
-body {
-  background-image: url("images/kaaba.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-
-.overlay {
-  background-color: rgba(0,0,0,0.5); /* تغميق */
-  height: 100vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-}
-</style>
-
-<div class="overlay">
-  مرحباً في موقعي
-</div>
