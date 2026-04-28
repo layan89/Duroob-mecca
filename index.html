@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta property="og:image" content="https://layan89.github.io/Duroob-mecca/images/kaaba.JPG">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دروب مكة</title>
+
+    <meta property="og:title" content="دروب مكة">
+    <meta property="og:description" content="دليلكم في المشاعر المقدسة">
+    <meta property="og:image" content="https://layan89.github.io/Duroob-mecca/images/kaaba.jpg">
+    <meta property="og:type" content="website">
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* هنا قمت بربط الكود بصورتك الموجودة في المجلد */
+            /* جربي هذا المسار، إذا لم تظهر الصورة سنغير jpg إلى JPG */
             background: linear-gradient(rgba(44, 0, 63, 0.65), rgba(0, 0, 0, 0.7)), 
-                        url('images/kaaba.JPG');
+                        url('images/kaaba.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -54,17 +59,18 @@
             padding: 20px;
             border-radius: 12px;
             border-right: 4px solid #d4af37;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            background: rgba(255, 255, 255, 0.15);
         }
 
         h2 {
             margin: 0;
             font-size: 1.2rem;
             font-weight: 500;
+        }
+
+        p {
+            margin: 8px 0 0;
+            font-size: 0.95rem;
+            color: #ccc;
         }
 
         footer {
@@ -78,22 +84,26 @@
 
     <div class="container">
         <h1>دروب مكة</h1>
-        <p class="description">دليل الخدمات والإرشادات في المشاعر المقدسة</p>
+        <p class="description">مساعدك داخل مكة والمشاعر المقدسة</p>
 
         <div class="card">
             <h2>مكة المكرمة</h2>
+            <p>معلومات وإرشادات داخل المدينة المقدسة</p>
         </div>
 
         <div class="card">
-            <h2>مشعر منى</h2>
+            <h2>منى</h2>
+            <p>أماكن المخيمات ومسارات الحجاج</p>
         </div>
 
         <div class="card">
-            <h2>صعيد عرفات</h2>
+            <h2>عرفات</h2>
+            <p>تعليمات يوم عرفة وأماكن التواجد</p>
         </div>
 
         <div class="card">
-            <h2>النقل والخدمات</h2>
+            <h2>الباصات والعربات</h2>
+            <p>أماكن التنقل والمسارات الرئيسية</p>
         </div>
 
         <footer>
