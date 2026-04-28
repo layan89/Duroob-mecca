@@ -3,74 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل الحجاج والمعتمرين</title>
+    <title>دروب مكة</title>
     <style>
         /* التنسيق الأساسي */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* ارفعي صورة وسميها background.jpg وضعيها بجانب ملف الـ html */
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg');
+            
+            /* --- تعديل الخلفية --- */
+            /* أولاً: نضع تدرجاً لونياً بنفسجياً خفيفاً فوق الصورة لدمج الألوان */
+            /* ثانياً: نضع رابط صورة الكعبة وأبراج البيت بالسماء البنفسجية */
+            /* ملاحظة: يمكنك استبدال الرابط أدناه برابط صورتك الخاصة مستقبلاً */
+            background: linear-gradient(rgba(44, 0, 63, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop');
+            
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            color: white;
-            text-align: center;
+            background-attachment: fixed; /* الخلفية ثابتة والكلام يتحرك */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
+        /* الحاوية الرئيسية الشفافة (تأثير الزجاج) */
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: rgba(255, 255, 255, 0.1); /* خلفية شفافة للكلام */
-            backdrop-filter: blur(10px); /* تأثير الضباب */
-            padding: 30px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 85%;
+            max-width: 500px;
+            /* تم تعديل لون الخلفية الشفافة ليميل للبنفسجي الداكن */
+            background: rgba(40, 0, 60, 0.2); 
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 45px 25px;
+            border-radius: 25px;
+            /* حدود نحيفة جداً بلون ذهبي خافت */
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
         }
 
-        h1 { color: #f1c40f; } /* لون ذهبي للعنوان الرئيسي */
-        
-        .section {
-            margin-bottom: 30px;
-            padding: 15px;
-            border-bottom: 1px dashed rgba(255,255,255,0.3);
+        h1 {
+            color: #d4af37; /* لون ذهبي ملكي */
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-weight: 700;
         }
 
-        .section:last-child { border-bottom: none; }
+        .description {
+            font-size: 1.05rem;
+            color: #e0e0e0;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
 
-        h2 { margin-bottom: 10px; }
-        p { line-height: 1.6; font-size: 1.1rem; }
+        /* تنسيق بطاقات الأقسام */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 14px 0;
+            padding: 20px;
+            border-radius: 15px;
+            /* خط ذهبي جانبي رفيع وأنيق */
+            border-right: 3px solid #d4af37;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card:hover {
+            background: rgba(212, 175, 55, 0.1); /* تأثير ذهبي خفيف عند التمرير */
+            transform: translateX(-5px) scale(1.01);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            padding-top: 15px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>🕋 دليل الحجاج والمعتمرين</h1>
-        <p>مساعدك داخل مكة والمشاعر المقدسة</p>
+        <h1>دروب مكة</h1>
+        <p class="description">دليل الخدمات والإرشادات في المشاعر المقدسة</p>
 
-        <div class="section">
-            <h2>🏢 مكة المكرمة</h2>
-            <p>معلومات وإرشادات داخل المدينة المقدسة.</p>
+        <div class="card">
+            <h2>مكة المكرمة</h2>
         </div>
 
-        <div class="section">
-            <h2>⛺ منى</h2>
-            <p>أماكن المخيمات ومسارات الحجاج داخل منى.</p>
+        <div class="card">
+            <h2>مشعر منى</h2>
         </div>
 
-        <div class="section">
-            <h2>⛰️ عرفات</h2>
-            <p>تعليمات يوم عرفة وأماكن التواجد.</p>
+        <div class="card">
+            <h2>صعيد عرفات</h2>
         </div>
 
-        <div class="section">
-            <h2>🚌 الباصات والعربات</h2>
-            <p>أماكن التنقل والمسارات الرئيسية.</p>
+        <div class="card">
+            <h2>النقل والخدمات</h2>
         </div>
 
         <footer>
-            <p>© دليل الحجاج - جميع الحقوق محفوظة</p>
+            جميع الحقوق محفوظة - دروب مكة - 2026
         </footer>
     </div>
 
